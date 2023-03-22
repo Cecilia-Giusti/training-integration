@@ -12,12 +12,12 @@
     letter-spacing: 0.0025em;
 
     &-white {
-        background-color: $background-white;
+        background-color: $background-grey;
         color: $color-title;
     }
 
     &-green {
         background-color: $color-title;
-        color: $background-white;
+        color: $background-grey;
     }
 }
