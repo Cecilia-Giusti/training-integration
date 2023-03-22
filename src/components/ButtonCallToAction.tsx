@@ -4,11 +4,19 @@ interface ButtonCallToActionInt {
   functionOnclick?: any;
 }
 
+/**
+ * ButtonCallToAction component.
+ * @param {Object} props - The component props.
+ * @param {string} props.text - The button text.
+ * @param {string} props.color - The button color.
+ * @param {Function} [props.functionOnclick] - The onClick function for the button.
+ * @returns {JSX.Element} - The ButtonCallToAction component.
+ */
 const ButtonCallToAction = ({
   text,
   color,
   functionOnclick,
-}: ButtonCallToActionInt) => {
+}: ButtonCallToActionInt): JSX.Element => {
   return (
     <button
       onClick={(e) => functionOnclick(e)}
