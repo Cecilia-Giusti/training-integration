@@ -1,0 +1,15 @@
+.logo {
+    @include flex;
+    gap: 10px;
+
+    &-name {
+        font-family: $font-nav;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        color: $color-title;
+    }
+
+}

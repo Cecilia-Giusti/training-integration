@@ -1,25 +1,15 @@
+header{
+    width:100%;
+    background-color: $background-white;
+}
+
 .header {
     width: 80%;
     margin: auto;
-    margin-top:30px;
+    padding-top:30px;
 
     nav {
         @include flex($justify: space-between);
-    }
-
-    &-logo {
-        @include flex;
-        gap: 10px;
-
-        &-name {
-            font-family: $font-nav;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1.5em;
-            line-height: 26px;
-            letter-spacing: 0.5px;
-            color: $color-title;
-        }
     }
 
     &-list{
