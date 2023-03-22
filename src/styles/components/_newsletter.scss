@@ -1,0 +1,57 @@
+.newsletter {
+    @include flex;
+    position: relative;
+
+    &-email {
+        width: 351px;
+        height: 42px;
+        background: $background-white;
+        font-family: $font-nav;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        padding: 8px 0 8px 16px;
+
+        &:focus-visible{
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder{
+            color: $color-value-input;
+        }
+
+        &::-moz-placeholder{
+            color: $color-value-input;
+        }
+
+        &:-ms-input-placeholder{
+            color: $color-value-input;
+        }
+
+        &::-ms-input-placeholder{
+            color: $color-value-input;
+        }
+
+        &::placeholder{
+            color: $color-value-input;
+        }
+    }
+
+    &-button {
+        position: absolute;
+        right:0;
+        width: 88px;
+        height: 42px;
+        background: $color-title;
+        box-shadow: 0px 0px 65px rgba(105, 185, 157, 0.48);
+        font-family: $font-nav;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        color: $background-white;
+    }
+}

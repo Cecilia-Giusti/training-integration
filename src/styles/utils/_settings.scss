@@ -42,4 +42,14 @@ color: #69B99D;
   button{
     border:none;
     background: none;
+    cursor: pointer;
+  }
+
+  input{
+    border: none;
+    background: none;
+  }
+
+  input[type="submit"]{
+    cursor: pointer;
   }
