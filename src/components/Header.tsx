@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ButtonCallToAction from "./ButtonCallToAction";
+import Logo from "./Logo";
 
 /**
 Header Component.
@@ -10,14 +11,7 @@ const Header = () => {
   return (
     <header className='header' data-testId='header'>
       <nav className='header-nav'>
-        <div className='header-logo'>
-          <img
-            src='./assets/logo.png'
-            alt='Mulih'
-            className='header-logo-img'
-          />
-          <p className='header-logo-name'>Mulih</p>
-        </div>
+        <Logo />
 
         <ul className='header-list'>
           <li className='header-list-item'>
