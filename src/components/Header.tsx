@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ButtonCallToAction from "./ButtonCallToAction";
 
 /**
 Header Component.
@@ -19,24 +20,31 @@ const Header = () => {
         </div>
 
         <ul className='header-list'>
-          <NavLink to={"/"}>Home </NavLink>
           <li className='header-list-item'>
-            <NavLink to={"/"}>Property</NavLink>
+            <NavLink to={"/"} data-testId='nav-home'>
+              Home{" "}
+            </NavLink>
+          </li>
+
+          <li className='header-list-item'>
+            <NavLink to={"/Property"}>Property</NavLink>
           </li>
           <li className='header-list-item'>
-            <NavLink to={"/"}>About</NavLink>
+            <NavLink to={"/About"}>About</NavLink>
           </li>
           <li className='header-list-item'>
-            <NavLink to={"/"}>Service</NavLink>
+            <NavLink to={"/Service"} data-testId='nav-service'>
+              Service
+            </NavLink>
           </li>
           <li className='header-list-item'>
-            <NavLink to={"/"}>Contact</NavLink>
+            <NavLink to={"/Contact"}>Contact</NavLink>
           </li>
         </ul>
 
         <div className='header-coonection'>
-          <button className='header-signIn'>Sign in </button>
-          <button className='header-login'>Login </button>
+          <ButtonCallToAction text='Sign in' color='white' />
+          <ButtonCallToAction text='Login' color='green' />
         </div>
       </nav>
     </header>
