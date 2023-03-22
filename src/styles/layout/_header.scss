@@ -25,6 +25,8 @@
     &-list{
         @include flex;
         gap:40px;
+        position: relative;
+        left:150px;
 
         &-item{
             font-family: $font-nav;
@@ -35,5 +37,10 @@
             letter-spacing: 0.5px;
             color: $color-nav;
         }
+    }
+
+    &-connection{
+        @include flex;
+        gap:8px;
     }
 }

@@ -42,7 +42,7 @@ const Header = () => {
           </li>
         </ul>
 
-        <div className='header-coonection'>
+        <div className='header-connection'>
           <ButtonCallToAction text='Sign in' color='white' />
           <ButtonCallToAction text='Login' color='green' />
         </div>
