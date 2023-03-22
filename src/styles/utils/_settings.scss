@@ -12,6 +12,7 @@
     width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
+    background-color: $background-white;
   }
   
   #root {
@@ -36,4 +37,9 @@
   
   .active{ 
 color: #69B99D;
+  }
+
+  button{
+    border:none;
+    background: none;
   }
