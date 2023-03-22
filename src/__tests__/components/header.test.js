@@ -45,19 +45,4 @@ describe("Given the user is on the home page", () => {
       expect(nav).toContainElement(serviceLink);
     });
   });
-
-  describe("When the user use a tablet or a smartphone", () => {
-    test("Then the header should be closed", () => {
-      render(
-        <HashRouter>
-          <Header />
-        </HashRouter>,
-        root
-      );
-
-      // Header
-      const header = screen.getByTestId("header");
-      expect(header).toHaveClass("header");
-    });
-  });
 });

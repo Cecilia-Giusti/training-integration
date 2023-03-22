@@ -7,40 +7,42 @@ Header Component.
 @function
 @returns {JSX.Element}
 */
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
-    <header className='header' data-testId='header'>
-      <nav className='header-nav'>
-        <Logo />
+    <header data-testId='header'>
+      <div className='header'>
+        <nav className='header-nav'>
+          <Logo />
 
-        <ul className='header-list'>
-          <li className='header-list-item'>
-            <NavLink to={"/"} data-testId='nav-home'>
-              Home{" "}
-            </NavLink>
-          </li>
+          <ul className='header-list'>
+            <li className='header-list-item'>
+              <NavLink to={"/"} data-testId='nav-home'>
+                Home{" "}
+              </NavLink>
+            </li>
 
-          <li className='header-list-item'>
-            <NavLink to={"/Property"}>Property</NavLink>
-          </li>
-          <li className='header-list-item'>
-            <NavLink to={"/About"}>About</NavLink>
-          </li>
-          <li className='header-list-item'>
-            <NavLink to={"/Service"} data-testId='nav-service'>
-              Service
-            </NavLink>
-          </li>
-          <li className='header-list-item'>
-            <NavLink to={"/Contact"}>Contact</NavLink>
-          </li>
-        </ul>
+            <li className='header-list-item'>
+              <NavLink to={"/Property"}>Property</NavLink>
+            </li>
+            <li className='header-list-item'>
+              <NavLink to={"/About"}>About</NavLink>
+            </li>
+            <li className='header-list-item'>
+              <NavLink to={"/Service"} data-testId='nav-service'>
+                Service
+              </NavLink>
+            </li>
+            <li className='header-list-item'>
+              <NavLink to={"/Contact"}>Contact</NavLink>
+            </li>
+          </ul>
 
-        <div className='header-connection'>
-          <ButtonCallToAction text='Sign in' color='white' />
-          <ButtonCallToAction text='Login' color='green' />
-        </div>
-      </nav>
+          <div className='header-connection'>
+            <ButtonCallToAction text='Sign in' color='white' />
+            <ButtonCallToAction text='Login' color='green' />
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };
